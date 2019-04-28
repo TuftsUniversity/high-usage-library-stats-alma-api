@@ -39,9 +39,8 @@
 
 **Dependencies:**
 
-    Note that this code is currently configured for Python 2.7, but I've noted in
-
-    the dependencies below and in various places in the code how to convert (refactor) this for Python\ > 3
+   Note that this code is currently configured for Python 2.7, but I've noted in
+   the dependencies below and in various places in the code how to convert (refactor) this for Python\ > 3
 
    - Python 2.7
 
