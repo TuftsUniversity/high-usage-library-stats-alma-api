@@ -51,37 +51,37 @@
   - Return Date
   - Return Time
 
-**Dependencies:  **
+**Dependencies:**
 
     Note that this code is currently configured for Python 2.7, but I&#39;ve noted in
 
     the dependencies below and in various places in the code how to convert (refactor) this for Python \&gt; 3
 
-        - Python 2.7
+   - Python 2.7
 
-        - use pip or another Python installation utility to install:
+   - use pip or another Python installation utility to install:
 
-            + pandas (this also installs numpy)
+        - pandas (this also installs numpy)
 
-            + tkFileDialog
+        - tkFileDialog
 
-            + xlwt
+        - xlwt
 
-            + xlsxwriter
+        - xlsxwriter
 
-            + xlrd
+        - xlrd
 
-                + you&#39;ll also need to intall xlrd for read\_exce in pandas to work
+         
 
-       - Python \&gt; 3.0
+   - Python \&gt; 3.0
 
-            + pandas (this also installs numpy)
+        - pandas (this also installs numpy)
 
-            + tkinter
+        - tkinter
 
-            + xlwt
+        - xlwt
 
-            + xlsxwriter
+        - xlsxwriter
 
 ** Output:**
 
