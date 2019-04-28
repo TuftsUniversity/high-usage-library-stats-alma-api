@@ -89,7 +89,7 @@
 
 **Method:**
 
-        Dataframe &quot;a&quot; is a parsed version of the input report from Analytics.
+        Dataframe "a" is a parsed version of the input report from Analytics.
 
         It contains Title,MMS Id, Permanent Call Number, Barcode,
 
@@ -99,7 +99,7 @@
 
         The logic of the script is to load loan and return times into
 
-        dataframe &quot;c&quot;, where each datetime in which either a loan or return occurred
+        dataframe "c", where each datetime in which either a loan or return occurred
 
         is a column in the dataframe, and each copy (barcode) of the same volume
 
@@ -121,9 +121,9 @@
 
         volume overlapped.  To be able to analyze this situation, the script fills
 
-        in the columns between \"loan\" and \"return\" for transacations that span multiple
+        in the columns between "loan" and "return" for transacations that span multiple
 
-        columns with \"on loan\"
+        columns with "on loan"
 
         The last step the script takes is to analyze each column (datetime)
 
