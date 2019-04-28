@@ -18,11 +18,7 @@ Create a report of concurrent checkouts that occured on multiple copies of the s
 
 **Input:**
 
-  The Analtyics report should have the following fields.  They can be in any
-
-  order, and you can have additional fields (they&#39;ll be ignored) but the field names
-
-  must be as below.  It should be in Excel format .xlsx format
+The Analtyics report should have the following fields.  They can be in any order, and you can have additional fields (they&#39;ll be ignored) but the field names must be as below.  It should be in Excel format .xlsx format
 
 - fulfilllment table with at least
   - Title
@@ -37,9 +33,7 @@ Create a report of concurrent checkouts that occured on multiple copies of the s
 
 **Dependencies:  **
 
-  Note that this code is currently configured for Python 2.7, but I&#39;ve noted in
-
-  the dependencies below and in various places in the code how to convert (refactor) this for Python \&gt; 3
+Note that this code is currently configured for Python 2.7, but I&#39;ve noted in the dependencies below and in various places in the code how to convert (refactor) this for Python \&gt; 3
 
     - Python 2.7
 
@@ -65,7 +59,5 @@ Create a report of concurrent checkouts that occured on multiple copies of the s
 
 ** Output:**
 
-   The script will output an Excel workbook of concurrent checkouts counts
-
-   for each volume.
+   The script will output an Excel workbook of concurrent checkouts counts for each volume.
 
