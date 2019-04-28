@@ -22,11 +22,9 @@
 
 **Input:**
 
-        The Analtyics report should have the following fields.  They can be in any
-
-        order, and you can have additional fields (they'll be ignored) but the field names
-
-        must be as below.  It should be in Excel format .xlsx format
+   The Analtyics report should have the following fields.  They can be in any
+   order, and you can have additional fields (they'll be ignored) but the field names
+   must be as below.  It should be in Excel format .xlsx format
 
 - fulfilllment table with at least
   - Title
