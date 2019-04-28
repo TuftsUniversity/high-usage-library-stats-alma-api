@@ -36,7 +36,7 @@
 
         The Analtyics report should have the following fields.  They can be in any
 
-        order, and you can have additional fields (they&#39;ll be ignored) but the field names
+        order, and you can have additional fields (they'll be ignored) but the field names
 
         must be as below.  It should be in Excel format .xlsx format
 
@@ -93,9 +93,9 @@
 
         Dataframe &quot;a&quot; is a parsed version of the input report from Analytics.
 
-        It contains &#39;Title&#39;, &#39;MMS Id&#39;, &#39;Permanent Call Number, &#39;Barcode&#39;,
+        It contains Title,MMS Id, Permanent Call Number, Barcode,
 
-        &#39;Loan Datetime&#39;, &#39;Return Datetime&#39;
+        Loan Datetime, Return Datetime
 
         This is used to compare loan periods for different items of the same volume
 
@@ -115,7 +115,7 @@
 
         With the columns arranged in this way, some loans will span multiple columns,
 
-        i.e., another transacation&#39;s loan or return will have occured in the middle
+        i.e., another transacations loan or return will have occured in the middle
 
         of the loan period of this transacation. This is the kind of event the script
 
@@ -129,7 +129,7 @@
 
         The last step the script takes is to analyze each column (datetime)
 
-        to see how many of the volume&#39;s copies were on loan at that time.
+        to see how many of the volume's copies were on loan at that time.
 
         The important question the output will answer how often all copies of a given volumes
 
