@@ -31,7 +31,7 @@ The Analtyics report should have the following fields.  They can be in any order
   - Return Date
   - Return Time
 
-**Dependencies:  **
+**Dependencies:**
 
 Note that this code is currently configured for Python 2.7, but I&#39;ve noted in the dependencies below and in various places in the code how to convert (refactor) this for Python \&gt; 3
 
@@ -57,7 +57,7 @@ Note that this code is currently configured for Python 2.7, but I&#39;ve noted i
 
       - xlsxwriter
 
-** Output:**
+**Output:**
 
    The script will output an Excel workbook of concurrent checkouts counts for each volume.
 
