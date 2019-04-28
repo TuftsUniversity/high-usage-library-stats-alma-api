@@ -45,7 +45,7 @@
   - MMS Id
   - Permanent Call Number
   - Barcode
-    - This is the item barcode, but leave the field name &quot;Barcode&quot;
+    - This is the item barcode, but leave the field name \"Barcode\"
   - Loan Date
   - Loan Time
   - Return Date
@@ -53,13 +53,11 @@
 
 **Dependencies:**
 
-    Note that this code is currently configured for Python 2.7, but I&#39;ve noted in
+    Note that this code is currently configured for Python 2.7, but I've noted in
 
-    the dependencies below and in various places in the code how to convert (refactor) this for Python \&gt; 3
+    the dependencies below and in various places in the code how to convert (refactor) this for Python\ > 3
 
    - Python 2.7
-
-   - use pip or another Python installation utility to install:
 
         - pandas (this also installs numpy)
 
@@ -73,7 +71,7 @@
 
          
 
-   - Python \&gt; 3.0
+   - Python \> 3.0
 
         - pandas (this also installs numpy)
 
