@@ -8,25 +8,13 @@
 
 **Purpose:**
 
-        Create a report of concurrent checkouts that occured on multiple
+   Create a report of concurrent checkouts that occured on multiple copies of the same volume, based on an exporte Analytics report with    the criteria below.   Note the required format.
 
-        copies of the same volume, based on an exporte Analytics report with
+   This script finds out how often during the given time periods that multiple copies of the same volume were out at the same time,
+   and how often that all copies of the same volume were out at the same time.
 
-        the criteria below.   Note the required format.
-
-        This script finds out how often during the given time periods
-
-        that multiple copies of the same volume were out at the same time,
-
-        and how often that all copies of the same volume were out at the same time.
-
-        This report assumes the Tufts University rubric for multiple copies,
-
-        that they will have the same MMS Id and call number, but different barcodes
-
-        The report returns counts for when all copies of a title were out
-
-        at the same time, but excludes these counts if there is only one copy of a title
+   This report assumes the Tufts University rubric for multiple copies, that they will have the same MMS Id and call number, but different barcodes
+   The report returns counts for when all copies of a title were out at the same time, but excludes these counts if there is only one copy of a title
 
 **Requirements:**
 
@@ -83,54 +71,6 @@
 
 ** Output:**
 
-        The script will output an Excel workbook of concurrent checkouts counts
+   The script will output an Excel workbook of concurrent checkouts counts
+   for each volume.
 
-        for each volume.
-
-**Method:**
-
-        Dataframe "a" is a parsed version of the input report from Analytics.
-
-        It contains Title,MMS Id, Permanent Call Number, Barcode,
-
-        Loan Datetime, Return Datetime
-
-        This is used to compare loan periods for different items of the same volume
-
-        The logic of the script is to load loan and return times into
-
-        dataframe "c", where each datetime in which either a loan or return occurred
-
-        is a column in the dataframe, and each copy (barcode) of the same volume
-
-        is a row.  In the cell for each row,column, the script records whether it
-
-        was a loan or a return.
-
-        Dataframe c is rearranged by column name, so that the column names (datetimes)
-
-        for loans and returns are in order.
-
-        With the columns arranged in this way, some loans will span multiple columns,
-
-        i.e., another transacations loan or return will have occured in the middle
-
-        of the loan period of this transacation. This is the kind of event the script
-
-        is looking for, because it means loan periods of different copies of the same
-
-        volume overlapped.  To be able to analyze this situation, the script fills
-
-        in the columns between "loan" and "return" for transacations that span multiple
-
-        columns with "on loan"
-
-        The last step the script takes is to analyze each column (datetime)
-
-        to see how many of the volume's copies were on loan at that time.
-
-        The important question the output will answer how often all copies of a given volumes
-
-        were out at a given time because that may indicate that the library
-
-        needs to purchase more copies, depending on how often this happened
