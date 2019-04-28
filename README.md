@@ -123,9 +123,9 @@
 
         volume overlapped.  To be able to analyze this situation, the script fills
 
-        in the columns between &quot;loan&quot; and &quot;return&quot; for transacations that span multiple
+        in the columns between \"loan\" and \"return\" for transacations that span multiple
 
-        columns with &quot;on loan.&quot;
+        columns with \"on loan\"
 
         The last step the script takes is to analyze each column (datetime)
 
