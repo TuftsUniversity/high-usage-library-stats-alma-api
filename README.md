@@ -29,16 +29,18 @@ The Analtyics report should have the following fields.  They can be in any order
   - Return Date
   - Return Time
 
-**Dependencies:**
-
-Note that this code is currently configured for Python 2.7, but I've noted in the dependencies below and in various places in the code how to convert (refactor) this for Python \> 3
-
 **To Run:**
 You can install the dependencies in the requirements file by running the following command before you run the script:
   - pip install -r requiremets
 
 Then just call the python script, without arguments:
   - python concurrentCheckouts.py
+
+
+**Dependencies:**
+
+Note that this code is currently configured for Python 2.7, but I've noted in the dependencies below and in various places in the code how to convert (refactor) this for Python \> 3
+
 
    - Python 2.7
 
