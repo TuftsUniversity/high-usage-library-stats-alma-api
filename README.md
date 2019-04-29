@@ -14,6 +14,7 @@ Create a report of concurrent checkouts that occured on multiple copies of the s
 Comments in the code describe in detail how the algorithm that gets these stats works.
 
 **Input:**
+
 The Analtyics report should have the following fields.  They can be in any order, and you can have additional fields (they&#39;ll be ignored) but the field names must be as below.  It should be in Excel format .xlsx format
 
 - fulfilllment table with at least
@@ -36,6 +37,7 @@ Then just call the python script, without arguments:
 
 
 **Dependencies:**
+
 Note that this code is currently configured for Python 2.7, but I've noted in the dependencies below and in various places in the code how to convert (refactor) this for Python \> 3
 
 
