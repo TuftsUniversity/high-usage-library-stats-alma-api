@@ -56,6 +56,8 @@ Note that this code is currently configured for Python 2.7, but I&#39;ve noted i
       - xlwt
 
       - xlsxwriter
+      
+      - xlrd
 
 **Output:**
 
