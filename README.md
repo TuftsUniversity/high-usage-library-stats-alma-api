@@ -9,6 +9,7 @@
 **Date:**        June 2018
 
 **Purpose:**
+
 Create a report of concurrent checkouts that occured on multiple copies of the same volume, based on an exporte Analytics report with the criteria below.   Note the required format below.  This script finds out how often during the given time periods that multiple copies of the same volume were out at the same time, and how often **all** copies of the same volume were out at the same time.  This report assumes the Tufts University structure for multiple copies, that they will have the same MMS Id and call number, but different barcodes.  The report returns counts for when all copies of a title were out at the same time, but excludes these counts if there is only one copy of a title.
 
 Comments in the code describe in detail how the algorithm that gets these stats works.
@@ -29,6 +30,7 @@ The Analtyics report should have the following fields.  They can be in any order
   - Return Time
 
 **To Run:**
+
 You can install the dependencies in the requirements file by running the following command before you run the script:
   - pip install -r requiremets
 
@@ -66,5 +68,6 @@ Note that this code is currently configured for Python 2.7, but I've noted in th
       - xlrd
 
 **Output:**
+
    The script will output an Excel workbook of concurrent checkouts counts for each volume.
 
