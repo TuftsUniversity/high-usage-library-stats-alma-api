@@ -29,7 +29,7 @@ The Analtyics report should have the following fields.  They can be in any order
   - Return Date
   - Return Time
 
-**To Run:**
+**Command:**
 
 You can install the dependencies in the requirements file by running the following command before you run the script:
   - pip install -r requiremets
