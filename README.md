@@ -12,9 +12,7 @@
 
 Create a report of concurrent checkouts that occured on multiple copies of the same volume, based on an exporte Analytics report with the criteria below.   Note the required format.   This script finds out how often during the given time periods that multiple copies of the same volume were out at the same time, and how often that all copies of the same volume were out at the same time.  This report assumes the Tufts University rubric for multiple copies, that they will have the same MMS Id and call number, but different barcodes The report returns counts for when all copies of a title were out at the same time, but excludes these counts if there is only one copy of a title
 
-**Requirements:**
 
-- **--** You need to set up an Alma Analytics API Key.   Details at [https://developers.exlibrisgroup.com/alma/apis/docs/analytics/R0VUIC9hbG1hd3MvdjEvYW5hbHl0aWNzL3JlcG9ydHM=/](https://developers.exlibrisgroup.com/alma/apis/docs/analytics/R0VUIC9hbG1hd3MvdjEvYW5hbHl0aWNzL3JlcG9ydHM=/)
 
 **Input:**
 
@@ -56,10 +54,9 @@ Note that this code is currently configured for Python 2.7, but I&#39;ve noted i
       - xlwt
 
       - xlsxwriter
-      
+
       - xlrd
 
 **Output:**
 
    The script will output an Excel workbook of concurrent checkouts counts for each volume.
-
