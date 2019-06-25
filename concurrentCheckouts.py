@@ -108,8 +108,12 @@ import xlwt
 import xlsxwriter
 import openpyxl
 import re
+
+# Python 2
 from django.utils.encoding import smart_str, smart_unicode
 
+# Python 3
+# from django.utils.encoding import smart_str
 
 def utf8(title):
     return title.decode('utf-8')
@@ -131,7 +135,7 @@ if not os.path.isdir(oDir) or not os.path.exists(oDir):
        os.makedirs(oDir)
 
 # create dataframe
-cc = pd.read_excel(filename, header=4, encoding = 'windows-1252', dtype={'MMS Id': 'str', 'Permanent Call Number': 'str', 'Barcode': 'str', 'Loan Fiscal Year':'str'}, converters={'Loan Date': pd.to_datetime, 'Loan Time': pd.to_datetime, 'Return Date': pd.to_datetime, 'Return Time': pd.to_datetime}, skipfooter=1)
+cc = pd.read_excel(filename, header=2, encoding = 'windows-1252', dtype={'MMS Id': 'str', 'Permanent Call Number': 'str', 'Barcode': 'str'}, converters={'Loan Date': pd.to_datetime, 'Loan Time': pd.to_datetime, 'Return Date': pd.to_datetime, 'Return Time': pd.to_datetime}, skipfooter=1)
 
 todays_date = datetime.now()
 current_time = datetime.now()
