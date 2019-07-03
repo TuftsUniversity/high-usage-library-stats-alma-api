@@ -254,7 +254,7 @@ while x < len(cc):
         barcode = str(a.iloc[z]['Barcode'])
 
         if firstLoanIndex in c:
-            firstLoanIndex += ":01"
+            firstLoanIndex += ":0" + str(z)
 
         c.insert(loc=transactionWithinBarcodeCount, column=firstLoanIndex, value="")
 
