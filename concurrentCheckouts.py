@@ -254,7 +254,7 @@ while x < len(cc):
         barcode = str(a.iloc[z]['Barcode'])
 
         if firstLoanIndex in c:
-            firstLoanIndex += ":0" + str(z)
+            firstLoanIndex += ":0" + str(z) + str(f)
 
         c.insert(loc=transactionWithinBarcodeCount, column=firstLoanIndex, value="")
 
@@ -268,7 +268,7 @@ while x < len(cc):
         firstReturnIndex = str(a.iloc[z]['Return Datetime'])
 
         if firstReturnIndex in c:
-            firstReturnIndex += ":0" + str(z)
+            firstReturnIndex += ":0" + str(z) + str(f)
 
         c.insert(loc=transactionWithinBarcodeCount, column=firstReturnIndex, value="")
         c.at[barcodeCount, firstReturnIndex] = "return"
