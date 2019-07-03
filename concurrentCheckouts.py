@@ -280,7 +280,7 @@ while x < len(cc):
 
             # handling collisions if two datetimes are at exactly the same date time (hours, minutes, and seconds)
             if loanIndex in c:
-                loanIndex += ":01"
+                loanIndex += ":0" + str(z) + str(f)
 
             c.insert(loc=transactionWithinBarcodeCount, column=loanIndex, value="")
 
@@ -289,7 +289,7 @@ while x < len(cc):
 
             returnIndex = str(a.iloc[f]['Return Datetime'])
             if returnIndex in c:
-                returnIndex += ":01"
+                returnIndex += ":0" + str(z) + str(f)
 
             c.insert(loc=transactionWithinBarcodeCount, column=returnIndex, value="")
 
