@@ -189,6 +189,9 @@ workbook = writerAll.book
 
 
 totalBarcodeCount = 0
+totalCount = 0
+totalTransactionCount = 0
+transacationWithinBarcodeCountForCount = 0
 # loop through master dataframe
 
 while x < len(cc):
@@ -247,9 +250,9 @@ while x < len(cc):
     # they will be close to in order because of the initial sorting on the master dataframe
 
     while z < count:
-
+        fCount = 0
         f = z + 1
-
+        print("\nF: " + str(f) + "\n")
         firstLoanIndex = str(a.at[z, 'Loan Datetime'])
         barcode = str(a.iloc[z]['Barcode'])
 
@@ -260,7 +263,7 @@ while x < len(cc):
 
         c.at[barcodeCount, firstLoanIndex] = "loan"
         transactionWithinBarcodeCount += 1
-
+        fCount += 1
 
 
 
@@ -273,7 +276,7 @@ while x < len(cc):
         c.insert(loc=transactionWithinBarcodeCount, column=firstReturnIndex, value="")
         c.at[barcodeCount, firstReturnIndex] = "return"
         transactionWithinBarcodeCount =+ 1
-
+        transacationWithinBarcodeCountForCount += 1
         while f < count and a.iloc[z]["Barcode"] == a.iloc[f]["Barcode"]:
 
             loanIndex = str(a.iloc[f]['Loan Datetime'])
@@ -296,17 +299,24 @@ while x < len(cc):
 
             c.at[barcodeCount, returnIndex] = "return"
             transactionWithinBarcodeCount += 1
+            transacationWithinBarcodeCountForCount += 1
 
             f += 1
+            fCount += 1
 
-        z += f
+            print("\nF: " + str(f) + "\n")
+
+        z += fCount
+        print("\nZ: " + str(z) + "\n")
+        print("\nCount: " + str(count) + "\n")
         barcodeDict[barcodeCount] = barcode
-
+        totalTransactionCount += transactionWithinBarcodeCount
         c = c.rename(index=barcodeDict)
         barcodeCount += 1
         totalBarcodeCount += 1
     #c = c.fillna("blank")
-
+    totalCount += count
+    print("\n\n\nBarcode count for " + str(call_number) + ": " + str(barcodeCount) + "; Transacation count per barcode: " + str(transactionWithinBarcodeCount) + "\n\n\n")
 
     # for Python 3
     #c = c.reindex(sorted(c.columns), axis=1)
@@ -440,6 +450,7 @@ while x < len(cc):
 
 
 
+print("\n\nFinal row of spreadsheet: " + str(len(cc)) + "; Total number of transactions: " +  str(transacationWithinBarcodeCountForCount) + "; Total count of transactions from volume count: " + str(totalCount) + "; Total barcode count: " + str(totalBarcodeCount) + "\n\n\n\n")
 
 worksheet = writerAll.sheets['Counts']
 # Widen the first column to make the text clearer.
