@@ -252,7 +252,7 @@ while x < len(cc):
     while z < count:
         fCount = 0
         f = z + 1
-        print("\nF: " + str(f) + "\n")
+        # print("\nF: " + str(f) + "\n")
         firstLoanIndex = str(a.at[z, 'Loan Datetime'])
         barcode = str(a.iloc[z]['Barcode'])
 
@@ -304,11 +304,11 @@ while x < len(cc):
             f += 1
             fCount += 1
 
-            print("\nF: " + str(f) + "\n")
+            # print("\nF: " + str(f) + "\n")
 
         z += fCount
-        print("\nZ: " + str(z) + "\n")
-        print("\nCount: " + str(count) + "\n")
+        # print("\nZ: " + str(z) + "\n")
+        # print("\nCount: " + str(count) + "\n")
         barcodeDict[barcodeCount] = barcode
         totalTransactionCount += transactionWithinBarcodeCount
         c = c.rename(index=barcodeDict)
