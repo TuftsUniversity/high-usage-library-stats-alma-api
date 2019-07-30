@@ -125,7 +125,7 @@ def utf8(title):
 # for >= Python 2.7 < Python 3
 filename = askopenfilename(title = "Select EXCEL file containing TRANSACTIONS")
 # for Python 3
-#filenameCirc = filedialog.askopenfilename(title = "Select EXCEL file containing TRANSACTIONS")
+#filename = filedialog.askopenfilename(title = "Select EXCEL file containing TRANSACTIONS")
 
 
 
@@ -358,6 +358,8 @@ while x < len(cc):
     maxedOutCount = 0
     concurrentLoanRunCounter = 0
     maxedOutLoanRunCounter = 0
+
+
     concurrentDates['Title'] = title
     concurrentDates['MMS Id'] = mms_id
     concurrentDates['Call Number'] = call_number
