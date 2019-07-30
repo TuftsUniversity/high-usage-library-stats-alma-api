@@ -6,7 +6,6 @@
 
 **Author:**     Henry Steele, Library Technology Services, Tufts University
 
-**Editing and**
 **Testing Help:**Christina Hennessey, California State University Northridge
 
 **Date:**        June 2018
